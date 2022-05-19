@@ -1,0 +1,16 @@
+syntax = "proto3";
+package alice.checkers.checkers;
+
+option go_package = "github.com/alice/checkers/x/checkers/types";
+
+message StoredGame {
+  string creator = 1;
+  string index = 2; 
+  string game = 3; 
+  string turn = 4; 
+  string red = 5; 
+  string black = 6; 
+  uint64 moveCount = 7;
+  
+}
+
